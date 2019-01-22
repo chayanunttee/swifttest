@@ -10,9 +10,24 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var topLabel: UILabel!
+    @IBOutlet weak var topText: UITextField!
+    @IBOutlet weak var topEdit: UITextField!
+    
+    @IBAction func topBtn(_ sender: Any) {
+        
+//        topLabel.text = "Welcome"
+        topEdit.text = "Welcome"
+    }
+    
+    @IBOutlet weak var myText: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
+//        topLabel.text = ""
+        topEdit.text = ""
+        
         // Do any additional setup after loading the view, typically from a nib.
+        
     }
 
 
